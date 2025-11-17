@@ -43,7 +43,7 @@ const Modal = (props) => {
         classNames="modal"
         nodeRef={nodeRef}
       >
-        <ModalOverlay {...props} />
+        <ModalOverlay ref={nodeRef} {...props} />
       </CSSTransition>
     </React.Fragment>
   );
